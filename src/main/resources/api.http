@@ -1,4 +1,4 @@
 GET localhost:8085/data
 
 ###
-GET localhost:8085/navi
+GET localhost:8085/navi/
