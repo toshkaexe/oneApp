@@ -25,7 +25,7 @@ public class NavigationEndpoint {
         return "test person222+++++";
     }
 
-    @GetMapping("/navi/")
+    @GetMapping("/navi")
     public ResponseEntity getNavigation() {
         try {
             List<NavigationDTO> childrens = new ArrayList<>();
@@ -48,12 +48,12 @@ public class NavigationEndpoint {
             );
 
             NavigationDTO navi = new NavigationDTO().builder()
-                    .title("title")
+                    .title("title_parent")
                     .uri("www.google.com")
                     .teaser("teaser")
                     .active(true)
                     .children(
-                            //Collections.emptyList()
+                          //  Collections.emptyList()
                             childrens
                     ).build();
 
